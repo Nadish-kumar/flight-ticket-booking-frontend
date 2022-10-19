@@ -15,7 +15,7 @@ const Signup = () => {
       password : ''
     },
     onSubmit: async(values) => {
-       var response = await axios.post(`http://localhost:5000/user/sign`,values).then((res) => { return res.data})
+       var response = await axios.post(`https://flight-ticketapp.herokuapp.com/user/sign`,values).then((res) => { return res.data})
        console.log(response)
        navigate("/home")
     },

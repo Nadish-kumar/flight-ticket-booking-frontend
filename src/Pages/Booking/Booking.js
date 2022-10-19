@@ -19,7 +19,7 @@ const Booking = () => {
             _id : params.flightid
         }
         console.log(values)
-        var response = await axios.post(`http://localhost:5000/flight/spe`,values).then((res) => { return res.data})
+        var response = await axios.post(`https://flight-ticketapp.herokuapp.com/flight/spe`,values).then((res) => { return res.data})
         setdata(response)
     }
     
@@ -47,7 +47,7 @@ const Booking = () => {
      }
      console.log(values)
       try {
-       var response = await axios.post(`http://localhost:5000/ticket/post`,values).then((res) => { return res.data}) 
+       var response = await axios.post(`https://flight-ticketapp.herokuapp.com/ticket/post`,values).then((res) => { return res.data}) 
        console.log(response[0].ticket)
        alert(`your ticket is booked , total amount is ${response[0].amount}`)
       } catch (error) {

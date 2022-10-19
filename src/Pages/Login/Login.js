@@ -13,7 +13,7 @@ const Login = () => {
       },
     onSubmit:async (values) => {
       try {
-        var response = await axios.post(`http://localhost:5000/user/login`,values).then((res) => { return res.data})
+        var response = await axios.post(`https://flight-ticketapp.herokuapp.com/user/login`,values).then((res) => { return res.data})
         console.log(response._id)
         sessionStorage.setItem("id",response._id)
         sessionStorage.setItem("email",response.email)

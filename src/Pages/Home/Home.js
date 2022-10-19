@@ -16,7 +16,7 @@ const Home = () => {
 
 
   const getalldata = async() => {
-    var response = await axios.get(`http://localhost:5000/flight/get`).then((res) => { return res.data})
+    var response = await axios.get(`https://flight-ticketapp.herokuapp.com/flight/get`).then((res) => { return res.data})
     setdata(response)
   }
 
@@ -24,7 +24,7 @@ const Home = () => {
     var refdata = {
       from : source
     }
-    var refilter = await axios.post(`http://localhost:5000/flight/spe`,refdata).then((res) => { return res.data})
+    var refilter = await axios.post(`https://flight-ticketapp.herokuapp.com/flight/spe`,refdata).then((res) => { return res.data})
     var goplacefilter = refilter.filter((data) => data.to === goplace) 
     console.log(goplacefilter)
     console.log(date)
