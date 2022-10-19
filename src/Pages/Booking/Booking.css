@@ -1,0 +1,25 @@
+.callback {
+    background-color: aliceblue;
+
+}
+
+.paper {
+    border: 1px solid black;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    background-color: beige;
+    border-radius: 20px;
+}
+
+.flight {
+    margin-left: 100px;
+}
+
+.time-ref {
+    display: flex;
+    justify-content: space-around;
+    padding: 4px;
+    font-size: 25px;
+    margin-right: 10px;
+}

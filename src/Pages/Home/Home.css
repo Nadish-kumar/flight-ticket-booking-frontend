@@ -1,0 +1,33 @@
+.searchbar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards {
+    width: 30%;
+    height: 250px;
+    border: 1px solid black;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: beige;
+    box-shadow: 3px 5px;
+    margin-left: 30px;
+
+
+}
+
+.refbutton {
+    text-align: center;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    margin-right: 10px;
+}

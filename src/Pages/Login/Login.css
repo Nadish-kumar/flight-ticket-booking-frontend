@@ -1,0 +1,17 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+
+}
+
+.heading {
+    text-align: center;
+    padding: 20px;
+}
+
+.ref {
+    padding: 20px;
+}
